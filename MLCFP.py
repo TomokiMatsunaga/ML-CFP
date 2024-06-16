@@ -2,7 +2,6 @@ from tkinter import filedialog
 from tkinter import *
 import os
 import argparse
-import h5py
 import numpy as np
 from scipy import signal
 from scipy.io import wavfile
