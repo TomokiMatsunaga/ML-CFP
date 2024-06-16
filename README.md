@@ -10,7 +10,7 @@ ML-CFP (Multi-Layer Combined Frequency and Periodicity) is an unsupervised multi
   cd ML-CFP
   ```
   ```
-  conda env create -n MLCFP -f environment.yml
+  conda env create -f environment.yml
   ```
   ```
   conda activate MLCFP
