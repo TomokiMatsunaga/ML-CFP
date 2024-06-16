@@ -15,7 +15,7 @@ ML-CFP (Multi-Layer Combined Frequency and Periodicity) is an unsupervised multi
   ```
   conda activate MLCFP
   ```
-- Install `PyTorch>=1.12` following the [official installation instructions](https://pytorch.org/get-started/locally/):
+- Install `PyTorch>=1.12` following the [official installation instructions](https://pytorch.org/get-started/locally/)
   
 
 #### Prediction
