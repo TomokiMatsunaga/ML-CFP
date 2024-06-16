@@ -376,7 +376,6 @@ def pitch_select(Z0, Zf, Zq, cdIvec, nbIvec, peakth=peakth, start=start, end=end
 
 
 eps = 1e-7
-split = 10
 
 
 def peaks_decision(fs, data, short=short, window=window, W=W, H=H, fftnum=fftnum, p0=p0, qc=qc, qp=qp, peakth=peakth,
