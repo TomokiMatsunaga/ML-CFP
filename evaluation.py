@@ -6,7 +6,7 @@ import mido
 accrange = 0.05  # the range of a reference onset [s]
 
 
-def label_create(txt_file, dataset, t, fs, short):
+def label_create(txt_file, dataset, t, fs, length):
     if dataset == 'MAPS':
         df = pd.read_table(txt_file)
         iv_label = df.values.astype(float)
@@ -55,8 +55,8 @@ def label_create(txt_file, dataset, t, fs, short):
             d[imatch] = 1
     else:
         raise Exception('Select the appropriate value for dataset')
-    if short > 0:
-        iv_label = iv_label[iv_label[:, 0] < short]
+    if length > 0:
+        iv_label = iv_label[iv_label[:, 0] < length]
     instnum = np.unique(iv_label[:, 3])
     pr_label = np.zeros((len(t), 128, len(instnum)), dtype=np.int64)
     for k in range(len(instnum)):
