@@ -12,6 +12,10 @@ ML-CFP (Multi-Layer Combined Frequency and Periodicity) is an unsupervised multi
   ```
 #### Show pianoroll
   ```
-  python pianoroll.py
+  python pianoroll.py --evaluation_on 0
+  ```
+or
+  ```
+  python pianoroll.py --evaluation_on 1
   ```
 ## Citation
