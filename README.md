@@ -35,4 +35,15 @@ or
   python pianoroll.py --evaluation_on 1
   ```
 ## Citation
-Under review
+  ```
+  @ARTICLE{10564134,
+  author={Matsunaga, Tomoki and Saito, Hiroaki},
+  journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing}, 
+  title={Multi-Layer Combined Frequency and Periodicity Representations for Multi-Pitch Estimation of Multi-Instrument Music}, 
+  year={2024},
+  volume={32},
+  number={},
+  pages={3171-3184},
+  keywords={Frequency-domain analysis;Harmonic analysis;Multiple signal classification;Instruments;Cepstrum;Feature extraction;Training;Automatic music transcription;multi-pitch estimation;music signal processing;partial cepstrum},
+  doi={10.1109/TASLP.2024.3416730}}
+  ```
