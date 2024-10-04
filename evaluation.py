@@ -33,8 +33,7 @@ def label_create(txt_file, dataset, t, fs, length):
         onset = np.empty((0, 3))
         offset = np.empty((0, 3))
         for x in mid:
-            if x.type == 'note_on' or 'note_off':
-                mididict.append(x.dict())
+            mididict.append(x.dict())
         mem = 0
         for y in mididict:
             settime = y['time'] + mem
