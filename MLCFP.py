@@ -583,9 +583,11 @@ if __name__ == '__main__':
     pr, iv0 = temporal_continuity(pr0)
     time_end = time.perf_counter()
     if evaluation_on == 0:
+        np.savez_compressed('temp/comp/' + os.path.splitext(os.path.basename(wav_file))[0], pr=pr)
         np.savez_compressed('temp/pianoroll', prest=pr)
     elif evaluation_on == 1:
         pr_label, iv_label = label_create(txt_file, dataset, t, fs, length)
+        np.savez_compressed('temp/label/' + os.path.splitext(os.path.basename(wav_file))[0], pr_label=pr_label)
         np.savez_compressed('temp/pianoroll', prest=pr, prref=pr_label)
         feval = framelevel_evaluate(pr, pr_label)
         print('frame-level', 'TP:', feval[0], 'FP:', feval[1], 'FN:', feval[2])
